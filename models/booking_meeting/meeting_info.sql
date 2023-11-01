@@ -3,7 +3,7 @@
 {% endset %}
 {% do run_query(query)%}
 
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
 select
         mc.userid ,
         mc.profileid ,
