@@ -3,7 +3,7 @@
 {% endset %}
 {% do run_query(query)%}
 
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
 select tup.userid as "doctoruserid" , 
 tup.profileid as "doctorprofileid",
 t.validity."from" as "slotstart",
